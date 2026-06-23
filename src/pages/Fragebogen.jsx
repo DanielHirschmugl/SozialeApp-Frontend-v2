@@ -69,7 +69,7 @@ function Fragebogen() {
   const [childAnswers, setChildAnswers] = useState({})
 
   useEffect(() => {
-    fetch("http://sozialify.eu/api/v1/sllogic/getQuestions?lawId=SGB%20II")
+    fetch("https://sozialify.eu/api/v1/sllogic/getQuestions?lawId=SGB%20II")
       .then((res) => {
         if (!res.ok) throw new Error(`Fehler: ${res.status}`)
         return res.json()

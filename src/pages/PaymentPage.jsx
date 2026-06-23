@@ -7,7 +7,7 @@ import './PaymentPage.css'
 const PUBLISHABLE_KEY = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY ?? 'pk_test_REPLACE_ME'
 console.log('[Stripe] Publishable Key Prefix:', PUBLISHABLE_KEY.substring(0, 12))
 const stripePromise = loadStripe(PUBLISHABLE_KEY)
-const API_BASE = 'http://sozialify.eu'
+const API_BASE = 'https://sozialify.eu'
 const POLL_INTERVAL_MS = 2000
 const MAX_POLL_ATTEMPTS = 15
 

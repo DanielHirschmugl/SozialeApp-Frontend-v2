@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import './Fragebogen.css'
 
-const API_BASE = 'http://sozialify.eu'
+const API_BASE = 'https://sozialify.eu'
 
 function ResultPage() {
   const navigate = useNavigate()
